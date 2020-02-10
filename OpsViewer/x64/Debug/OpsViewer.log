@@ -1,0 +1,19 @@
+﻿  Generate moc_predefs.h
+  Uic'ing LoginServer.ui...
+  Uic'ing OpsViewer.ui...
+  Rcc'ing res.qrc...
+  Moc'ing AnimationButton.h...
+  Moc'ing LoginServer.h...
+  Moc'ing OpsViewer.h...
+  AnimationButton.cpp
+  LoginServer.cpp
+  OpsViewer.cpp
+  main.cpp
+f:\qtproject\opsviewer\opsviewer.cpp(216): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+f:\qtproject\opsviewer\opsviewer.cpp(227): warning C4100: “event”: 未引用的形参
+f:\qtproject\opsviewer\opsviewer.cpp(325): warning C4100: “event”: 未引用的形参
+  qrc_res.cpp
+  moc_AnimationButton.cpp
+  moc_LoginServer.cpp
+  moc_OpsViewer.cpp
+  OpsViewer.vcxproj -> F:\QTProject\OpsViewer\debug\OpsViewer.exe
