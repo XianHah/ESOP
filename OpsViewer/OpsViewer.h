@@ -95,7 +95,7 @@ signals:
     void ShowLoginDlg();
     void SendConfirmJson();
 protected slots:
-    void ThisShow();
+    void ThisShow(QString);
     void ScollPlayNotice();
 };
 

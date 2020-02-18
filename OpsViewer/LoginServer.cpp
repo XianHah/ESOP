@@ -239,7 +239,7 @@ void LoginServer:: LoginRecvMessage(QString str)
             }
             this->hide();
             UserLogoutFlag = false;
-            emit ShowMainWidget();
+            emit ShowMainWidget(ana.UserDetail);
         }
         else if (ana.result==412&&ana.Type=="login")
         {

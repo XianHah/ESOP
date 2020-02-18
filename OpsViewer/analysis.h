@@ -40,6 +40,7 @@ public:
     QString Mac;
     QString UserName;
     QString time;
+    QString UserDetail;
     vector<QString> QlistPicturePath;//图片地址链表
     vector<QString> QlistNoticeTitle;//标题链表
     vector<QString> QlistNoticeContent;//内容链表

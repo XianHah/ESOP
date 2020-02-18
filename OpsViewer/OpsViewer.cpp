@@ -760,7 +760,7 @@ void OpsViewer::UrlRequestGet( const QUrl url )
     reply = 0;
 }
 
-void OpsViewer::ThisShow()
+void OpsViewer::ThisShow(QString str)
 {
     ui->BaseWidget->setStyleSheet(QString("border-image: url();"));
     ui->AllWidget->setStyleSheet("border-image: url();");
@@ -768,7 +768,7 @@ void OpsViewer::ThisShow()
     ui->label->setStyleSheet(QString("border-image: url();color:red;"));
     ui->label->setText(QString::fromLocal8Bit("几米，让连接更简单！"));
     ui->label_4->setText(QString::fromLocal8Bit("当前产能："));
-    this->setWindowTitle("ESOPViewer_V1.0.3         "+QString::fromLocal8Bit("当前用户：")+OpsUser);
+    this->setWindowTitle("ESOPViewer_V1.0.3    "+str);
     this->showMaximized();
     RunCounter.ThreadRunFlag = true;
     RunCounter.start();

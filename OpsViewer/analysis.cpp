@@ -651,8 +651,22 @@ bool Analysis::AnalysisLoginJson(QString jsonstr)
                     QJsonValue value = body.value("result");
                     result = value.toInt();
                     value = body.value("data");
-                    LoginData = value.toString();
-
+                    if(result==200)
+                    {
+                        QJsonObject DataObj = value.toObject();
+                        QJsonValue Value1 = DataObj.value("userDes");
+                        UserDetail = QString::fromLocal8Bit("用户：")+Value1.toString();
+                        Value1 = DataObj.value("mainProcess");
+                        UserDetail+=QString::fromLocal8Bit("    主要操作：")+Value1.toString();
+                        Value1 = DataObj.value("proficiency");
+                        UserDetail+=QString::fromLocal8Bit("    熟练程度：")+Value1.toString();
+                        Value1 = DataObj.value("otherProcess");
+                        UserDetail+=QString::fromLocal8Bit("    其它技能：")+Value1.toString();
+                    }
+                    else
+                    {
+                        LoginData = value.toString();
+                    }
                 }
                 if(rootObj.contains("type"))
                 {

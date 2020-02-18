@@ -85,7 +85,7 @@ public:
     bool get_feature(IplImage *image, ASF_FaceFeature &feature);
 signals:
     void SendIplImage(IplImage  *frame,ASF_SingleFaceInfo FaceInfo);
-    void ShowMainWidget();
+    void ShowMainWidget(QString);
 protected:
     void closeEvent(QCloseEvent *);
 
